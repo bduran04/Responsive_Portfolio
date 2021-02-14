@@ -1,73 +1,198 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    background-color: #d9dcd6;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+@media (max-width: 1200px) {
+    body {
+        width: 100%;
+    }
+}
+/*NAV*/
+nav {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    justify-content: center;
+    height: 76px;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
+.NavIcon {
+    background-color: lightblue;
+    border-radius: 64px;
+    width: 48px;
+    height: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
+.NavItems {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+.NavItem {
+    margin-right: 10px;
 }
 
-.header div ul {
-    list-style-type: none;
+/*HERO*/
+.Hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 48px;
+    margin-bottom: 64px;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+.HeroImageContainer {
+    border-radius: 64px;
+    height: 400px;
+}
+.HeroImage {
+    width: 100%;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+/*ABOUT*/
+.About {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
 }
-
-p {
-    font-size: 16px;
+.AboutInfo {
+    background-color: lightblue;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 64px 1fr 60px
 }
-
-.hero {
-    height: 160px;
-    background-color: blue;
+.AboutInfoHeader {
+    display: grid;
+    grid-template-columns: 64px 1fr;
 }
-.bannerBox {
-    color:white;
+.AboutInfoHeaderCircle {
+    background-color: lightblue;
+    border-radius: 64px;
+    width: 100%;
+    height: 100%;
+}
+.AboutInfoHeaderText {
     position: relative;
-    top: 130px;
-    left: 80%;
-} 
-section {
+    right: 32px;
+}
+.AboutInfoText{
+    padding-left: 32px;
+}
+.AboutInfoCTA {
+    padding-left: 32px;
+    padding-bottom: 16px;
+}
+
+.AboutImageContainer {
+    transform: rotate(225deg);
+    background-color: #6c63ff;
+    position: relative;
+    right: 64px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+.AboutImage {
+    transform: rotate(115deg);
+    background-color: lightblue;
+    border-radius: 100px;
+    width: 200px;
+    height: 100%;
+}
+/*PORTFOLIO*/
+.Projects {
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
 }
-.sectionTitle {
-    background-color: red;
+.card {
+    height: 300px;
+    width: 400px;
+    border-radius: 3px;
+    display:grid;
+    grid-template-rows: 200px 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
-.sectionContent {
-    background-color: green;
-    border-left: 4px solid black;
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardImage {
+    background-color: darkblue;
+    margin: 16px;
+}
+.cardText {
+    margin: 16px;
+    text-align: center;
+}
+.projectImage {
+    height: 200px;
+    width: 100%;
+}
+/*CONTACT*/
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+@media (max-width: 600px) {
+    body {
+        margin: 0 10px;
+    }
+    .Hero {
+        grid-template-columns: 1fr;
+    }
+    .Projects {
+        grid-template-columns: 1fr;
+    }
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
 }

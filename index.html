@@ -1,42 +1,95 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+<title>Belle's Personal Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<head>
-    <meta charset="UTF-8" />
-    <title>Belle's Portfolio</title>
-</head>
-
 <body>
-<!--Header-->
-    <header class="header">
-        <h1>Belle Duran</h1>
-        <div>
-            <ul>
-                <li>
-                    <a>About Me</a>
-                </li>
-                <li>
-                    <a>Work</a>
-                </li>
-                <li>
-                    <a>Contact Me</a>
-                </li>
-                <li>
-                    <a>Resume</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <div class="hero">
-        <div class="bannerBox">Subtitle for Box</div>
-    </div>
-<!--Main Content-->
-    <main class="content">
-        <section>
-            <div class="sectionTitle"></div>
-            <div class="sectionContent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        </section>
-    </main>
-</body>
 
+<!-- Navbar -->
+<nav>
+    <div class="NavIcon"></div>
+    <div class="NavItems">
+        <div onmousedown="scrollIntoView('aboutMe')" class="NavItem">About Me</div>
+        <div onmousedown="scrollIntoView('portfolio')" class="NavItem">Portfolio</div>
+    </div>
+</nav>
+
+<!-- Page content -->
+<!--HERO-->
+<div class="Hero">
+    <div class="HeroImageContainer">
+        <img class="HeroImage" src="tree.svg" alt="image of tree">
+    </div>
+    <div class="HeroText">
+        <p>Hello, my name is </p>
+        <h2>Belle Duran</h2>
+    </div>
+</div>
+<!--ABOUT-->
+<div id="aboutMe" class="About">
+    <div class="AboutInfo">
+        <div class="AboutInfoHeader">
+            <div class="AboutInfoHeaderCircle"></div>
+            <h2 class="AboutInfoHeaderText">About Me</h2>
+        </div>
+        <div class="AboutInfoText">
+            <p>I adore my cat.</p>
+            <p>I have a growing vegetable garden.</p>
+            <p>I'm working to be developer.</p>
+        </div>
+        <div class="AboutInfoCTA">
+            <button>Contact Me</button>
+        </div>
+    </div>
+    <div class="AboutImageContainer">
+        <img class="AboutImage" src="IMG_9492.jpg" alt="profile image">
+    </div>
+</div>
+<h2 id="portfolio">Portfolio</h2>
+<div class="Projects">
+    <div onmousedown="navigateToPage(`https://bduran04.github.io/HomeworkOne/`)" class="card">
+        <div class="cardImage"> <img class="projectImage" src="Project1.png" alt="Project 1"></div>
+        <div class="cardText">This is my first project; where we refactored the code for accessibility</div>
+    </div>
+    <div onmousedown="navigateToPage(`https://www.google.com`)" class="card">
+        <div class="cardImage"></div>
+        <div class="cardText">This is where my second project will go as soon as I complete it</div>
+    </div>
+    <div class="card">
+        <div class="cardImage"></div>
+        <div class="cardText">This is where my third project will go as soon as I complete it</div>
+    </div>
+    <div class="card">
+        <div class="cardImage"></div>
+        <div class="cardText">This is where my fourth project will go as soon as I complete it</div>
+    </div>
+</div>
+<div class="container">
+    <div>
+      <h2>Contact Me</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+    function navigateToPage(src) {
+        window.open(src, '_blank')
+    }
+    function scrollIntoView(id) {
+        document.getElementById(id).scrollIntoView();
+    }
+</script>
 </html>
