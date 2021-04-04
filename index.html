@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Belle's Personal Site</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+    <title>Belle's Personal Site</title>
+</head>
+
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- Navbar -->
-<nav>
-    <div class="NavIcon"></div>
-    <div class="NavItems">
-        <div onmousedown="scrollIntoView('aboutMe')" class="NavItem">About Me</div>
-        <div onmousedown="scrollIntoView('portfolio')" class="NavItem">Portfolio</div>
-    </div>
-</nav>
-
-<!-- Page content -->
-<!--HERO-->
-<div class="Hero">
-    <div class="HeroImageContainer">
-        <img class="HeroImage" src="tree.svg" alt="image of tree">
-    </div>
-    <div class="HeroText">
-        <p>Hello, my name is </p>
-        <h2>Belle Duran</h2>
-    </div>
-</div>
-<!--ABOUT-->
-<div id="aboutMe" class="About">
-    <div class="AboutInfo">
-        <div class="AboutInfoHeader">
-            <div class="AboutInfoHeaderCircle"></div>
-            <h2 class="AboutInfoHeaderText">About Me</h2>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                </li>
+            </ul>
+            <div class="social-part">
+                <a class="fa fa-github" aria-hidden="true" href="https://github.com/bduran04">
+                </a>
+                <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/belle-duran-127760204/"></a>
+                <i>
+                <button class="dark-mode" class="light-mode" id="dark-mode-button">&#127769</button>
+            </i>
+            </div>
         </div>
-        <div class="AboutInfoText">
-            <p>I adore my cat.</p>
-            <p>I have a growing vegetable garden.</p>
-            <p>I'm working to be developer.</p>
+    </nav>
+    <!-- Page content -->
+    <!--HERO-->
+    <div class="Hero">
+        <div class="HeroImageContainer">
+            <img class="HeroImage" src="assets/IMG_9492.jpg" alt="image of tree">
         </div>
-        <div class="AboutInfoCTA">
-            <button>Contact Me</button>
+        <div class="HeroText">
+            <p>Ahoy hoy! My name is </p>
+            <h2>Belle Duran</h2>
         </div>
     </div>
-    <div class="AboutImageContainer">
-        <img class="AboutImage" src="IMG_9492.jpg" alt="profile image">
+    <!--ABOUT-->
+    <div id="aboutMe" class="About">
+        <div class="AboutInfo">
+            <div class="AboutInfoHeader">
+                <div class="AboutInfoHeaderCircle"></div>
+                <h2 class="AboutInfoHeaderText">About Me</h2>
+            </div>
+            <div class="AboutInfoText">
+                <p>I adore my cat.</p>
+                <p>I have a growing vegetable garden.</p>
+                <p>I'm working to be developer.</p>
+            </div>
+        </div>
+        <div class="AboutImageContainer">
+            <img class="AboutImage" src="tree.svg" alt="profile image">
+        </div>
     </div>
-</div>
-<h2 id="portfolio">Portfolio</h2>
-<div class="Projects">
-    <div onmousedown="navigateToPage(`https://bduran04.github.io/HomeworkOne/`)" class="card">
-        <div class="cardImage"> <img class="projectImage" src="Project1.png" alt="Project 1"></div>
-        <div class="cardText">This is my first project; where we refactored the code for accessibility</div>
+            <h2>Contact Me</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
-    <div onmousedown="navigateToPage(`https://www.google.com`)" class="card">
-        <div class="cardImage"></div>
-        <div class="cardText">This is where my second project will go as soon as I complete it</div>
-    </div>
-    <div class="card">
-        <div class="cardImage"></div>
-        <div class="cardText">This is where my third project will go as soon as I complete it</div>
-    </div>
-    <div class="card">
-        <div class="cardImage"></div>
-        <div class="cardText">This is where my fourth project will go as soon as I complete it</div>
-    </div>
-</div>
-<div class="container">
-    <div>
-      <h2>Contact Me</h2>
-    </div>
-    <div class="row">
-      <div class="column">
-        <form>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<script>
-    function navigateToPage(src) {
-        window.open(src, '_blank')
-    }
-    function scrollIntoView(id) {
-        document.getElementById(id).scrollIntoView();
-    }
-</script>
+
 </html>

@@ -1,0 +1,36 @@
+.Projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 48px;
+    margin-top: 64px;
+    margin-left: 25%;
+    margin-bottom: 64px;
+}
+.card {
+    height: 500px;
+    width: 700px;
+    border-radius: 3px;
+    display:grid;
+    grid-template-rows: 200px 100px;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardImage {
+    background-color: darkblue;
+    margin: 16px;
+}
+.cardText {
+    margin: 16px;
+    text-align: center;
+}
+.projectImage {
+    height: 200px;
+    width: 100%;
+}
+
