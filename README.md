@@ -1,3 +1,3 @@
 # Responsive_Portfolio
 Description: This is my updated Portfolio webpage. 
-Deployed Website: 
+Deployed Website: https://bduran04.github.io/Responsive_Portfolio/
