@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
     <title>Projects</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-sm   navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,26 +23,37 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html"> ⬅️ Back to Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html"> 🏠  Back to Home <span class="sr-only">(current)</span></a>
                 </li>
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link" id="navItem"></a>
+                </li>
+        </div>
         </div>
     </nav>
     <div class="Projects">
-        <div onmousedown="navigateToPage(`https://bduran04.github.io/HomeworkOne/`)" class="card">
-            <div class="cardImage"> <img class="projectImage" src="/assets/IMG_9492.jpg" alt="Project 1"></div>
-            <div class="cardText">This is my first project; where we refactored the code for accessibility</div>
+        <div onmousedown="navigateToPage(`https://chancevaughn.github.io/Trailers/index.html`)" class="card">
+            <div class="cardImage"> <img class="projectImage" src="assets/Trailerflix.gif" alt="Project 1"></div>
+            <a class="cardTitle">🎥 Trailerflix</a>
+            <div class="cardText">This project is called, Trailerflix. It allows the user to select a movie from my
+                team's personal choice database and watch the movie's trailer obtained through the Youtube API. It also
+                provides the Rotten Tomatoes rating, and description obtained through the OMDb API. It also allows users
+                to save their favorite movies and display them in a separate "Favorites" page.</div>
         </div>
-        <div onmousedown="navigateToPage(`https://www.google.com`)" class="card">
-            <div class="cardImage"></div>
-            <div class="cardText">This is where my second project will go as soon as I complete it</div>
+        <div onmousedown="navigateToPage(`https://bduran04.github.io/Weather_dashboard/`)" class="card">
+            <div class="cardImage"> <img class="projectImage" src="assets/WeatherApp.gif" alt="Project 1"></div>
+            <a class="cardTitle">🌧️ Weather Dashboard</a>
+            <div class="cardText">This project is a weather app created using 60% Javascript. I've obtained information from the Open Weather API to display live information for select cities as well as forecasted weather for the next 5 days.</div>
         </div>
-        <div class="card">
-            <div class="cardImage"></div>
-            <div class="cardText">This is where my third project will go as soon as I complete it</div>
+        <div onmousedown="navigateToPage(`https://quiet-earth-09250.herokuapp.com/`)" class="card">
+            <div class="cardImage"> <img class="projectImage" src="assets/book_club2.gif" alt="Project 1"></div>
+            <a class="cardTitle">📖 Book Club</a>
+            <div class="cardText">This project is called Book Club and is made up of JavaScript, Handlebars.js, and CSS. This web application allows users to view a list of books and book selections and reviews from registered users.</div>
         </div>
     </div>
     <div class="container">
         <div>
+            <script src="script.js"></script>
 </body>
+
 </html>

@@ -23,25 +23,26 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">🏠 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
+                    <a class="nav-link" href="#aboutMe">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="project.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Me</a>
+                    <a class="nav-link" href="#contactForm" >Contact Me</a>
                 </li>
             </ul>
             <div class="social-part">
                 <a class="fa fa-github" aria-hidden="true" href="https://github.com/bduran04">
                 </a>
-                <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/belle-duran-127760204/"></a>
+                <a class="fa fa-linkedin" aria-hidden="true"
+                    href="https://www.linkedin.com/in/belle-duran-127760204/"></a>
                 <i>
-                <button class="dark-mode" class="light-mode" id="dark-mode-button">&#127769</button>
-            </i>
+                    <button class="dark-mode" class="light-mode" id="dark-mode-button">&#127769</button>
+                </i>
             </div>
         </div>
     </nav>
@@ -64,31 +65,33 @@
                 <h2 class="AboutInfoHeaderText">About Me</h2>
             </div>
             <div class="AboutInfoText">
-                <p>I adore my cat.</p>
-                <p>I have a growing vegetable garden.</p>
-                <p>I'm working to be developer.</p>
+                <p>My name is Belle, I am a software developer.</p>
+                <p>I love to cook! I'm always down for new recipes.</p>
+                <p>I have two cats named Mittens & Kitsune</p>
             </div>
         </div>
         <div class="AboutImageContainer">
             <img class="AboutImage" src="tree.svg" alt="profile image">
         </div>
     </div>
-            <h2>Contact Me</h2>
+    <!--Contact Me-->
+    <div id="contactForm">
+    <h2>Contact Me</h2>
+    <div class="row">
+        <div class="column">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
-        <div class="row">
-            <div class="column">
-                <form>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."
-                        style="height:170px"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
+    </div>
+    </div>
+    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

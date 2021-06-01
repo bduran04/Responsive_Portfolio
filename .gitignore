@@ -1,0 +1,7 @@
+# local files
+/node_modules
+assets/Trailerflix.gif
+# next files
+/.next/
+# webstorm files
+/.idea/
